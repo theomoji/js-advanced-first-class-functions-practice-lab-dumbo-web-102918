@@ -22,3 +22,8 @@ const driversByRevenue = function (drivers) {
     return driverOne.revenue - driverTwo.revenue;
   });
 }
+
+
+function driversByName(drivers) {
+  return drivers.sort();
+}
