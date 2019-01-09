@@ -24,6 +24,9 @@ const driversByRevenue = function (drivers) {
 }
 
 
-function driversByName(drivers) {
-  return drivers.sort();
-}
+const driverNames = []
+const driversByName = drivers.forEach(driver => {
+  driverNames.push(driver.name);
+  driverNames.sort()
+})
+
